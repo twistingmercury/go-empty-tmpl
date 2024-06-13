@@ -38,7 +38,7 @@ To initialize a new Go project using this template, run the following command:
 scaffolder init \
     --module "my/module/name" \
     --bin-name "myapp" \
-    --template "https://tbd"
+    --template "https://github.com/twistingmercury/go-empty-tmpl.git"
 ```
 
 The `scaffolder` will create a new directory with your project's name and replace the template's tokens (`MODULE_NAME` and `BIN_NAME`) with the provided values.
