@@ -1,9 +1,3 @@
-BIN_DIR := "./bin/"
-OUT := "BIN_NAME"
-BUILD_DATE := $(shell date +"%Y-%m-%d")
-BUILD_VER := "0.0.1"
-TARGET:= "main.go"
-
 default: help
 
 .PHONY: help
@@ -21,15 +15,13 @@ clean:
 
 .PHONY: bin
 bin: clean
-	go build \
-	-ldflags "-X 'MODULE_NAME/conf.buildDate=$(BUILD_DATE)' -X 'MODULE_NAME/conf.buildVer=$(BUILD_VER)' -s -w" \
-	-o $(BIN_DIR)$(OUT) $(TARGET)
+	go build -ldflags  "-s -w" -o ./bin/token_go_bin main.go
 
 .PHONY: test
 test:
-	go test -v ./conf ./server -coverprofile=coverage.out
+	go test -v ./... -coverprofile=coverage.out
 	go tool cover -html=coverage.out
 
 .PHONY: run
 run: bin
-	./$(BIN_DIR)$(OUT)
+	./bin/token_go_bin

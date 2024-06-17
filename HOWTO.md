@@ -18,8 +18,8 @@ To create a new Go project using this template, you'll need to use the [scaffold
 
 Since this is a template, understand that cloning this project directly and attempting to compile it will fail. This is due to the replacement tokens scattered throughout the template:
 
-- `MODULE_NAME`     This is the name of the module, as declared in the go.mod file, i.e., `github.com/your-name/your-project`
-- `BIN_NAME`        This will be the name of the compiled binary, the name of the root folder, and the name of the docker image.
+- `token_go_module`     This is the name of the module, as declared in the go.mod file, i.e., `github.com/your-name/your-project`
+- `token_go_bin`        This will be the name of the compiled binary, the name of the root folder, and the name of the docker image.
 
 
 ### Prerequisites
@@ -41,7 +41,7 @@ scaffolder init \
     --template "https://github.com/twistingmercury/go-empty-tmpl.git"
 ```
 
-The `scaffolder` will create a new directory with your project's name and replace the template's tokens (`MODULE_NAME` and `BIN_NAME`) with the provided values.
+The `scaffolder` will create a new directory with your project's name and replace the template's tokens (`token_go_module` and `token_go_bin`) with the provided values.
 
 ### Using the Makefile
 

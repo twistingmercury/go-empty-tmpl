@@ -1,17 +1,15 @@
-# Project MODULE_NAME
+# Project token_go_module
 
 _**TODO**: A brief description of your Go project goes here. Explain what your project does, its purpose, and any key features or benefits. Feel free to customize this template based on your project's specific needs. Add or remove sections as necessary, and provide detailed information to help users understand and use your Go project effectively._
 
 ## Table of Contents
 
-- [Project MODULE_NAME](#project-MODULE_NAME)
+- [Project MODULE\_NAME](#project-token_go_module)
   - [Table of Contents](#table-of-contents)
   - [Installation](#installation)
   - [Usage](#usage)
-  - [Configuration](#configuration)
-  - [Contributing](#contributing)
   - [Testing](#testing)
-  - [License](#license)
+  - [Contributing](#contributing)
 
 ## Installation
 
@@ -22,10 +20,10 @@ _**TODO**:Provide instructions on how to install and set up your Go project. Inc
 git clone [path to git repo]
 
 # Change to the project directory
-cd BIN_NAME
+cd [project root directory]
 
 # Install dependencies
-go mod download
+go mod tidy
 
 # Build the project
 go build
@@ -40,9 +38,14 @@ _**TODO**: Explain how to use your Go project. Provide examples, command-line in
 make run
 ```
 
-## Configuration
+## Testing
 
-See [conf/README.md](./conf/README.md)
+_**TODO**: Describe how to run tests for your Go project. Provide instructions on running unit tests, integration tests, or any other test suites._
+
+```bash
+# Run unit tests
+make test
+```
 
 ## Contributing
 
@@ -61,18 +64,3 @@ git push origin feature/my-feature
 
 # Open a pull request
 ```
-
-## Testing
-
-_**TODO**: Describe how to run tests for your Go project. Provide instructions on running unit tests, integration tests, or any other test suites._
-
-```bash
-# Run unit tests
-make test
-```
-
-## License
-
-Specify the license under which your project is distributed. Provide a link to the full license text if applicable.
-
-This project is licensed under the [MIT License](./LICENSE).
